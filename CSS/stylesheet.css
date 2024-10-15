@@ -94,7 +94,7 @@ body {
     padding: 5px;
     background-color: var(--color1);
     border-radius: 5px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .paragraph {
@@ -110,7 +110,7 @@ body {
     margin: 5px auto;
     max-width: 800px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
 }
 .newslist {
@@ -236,12 +236,27 @@ a:hover {
     z-index: -1;
 }
 
-.normalimg {
+.normalimage {
     width: 60%;
     height: auto;
     justify-content: center;
 }
-
+.scroll-container{
+    width: 600px;
+    left:30%;
+    overflow: hidden;
+    position: relative;
+}
+.images{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.images img{
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 10px;
+}
 .conclusion {
     position: relative;
     display: block;
