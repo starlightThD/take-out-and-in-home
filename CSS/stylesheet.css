@@ -268,7 +268,7 @@ a:hover {
     align-items: center;
 }
 .container {
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -319,7 +319,7 @@ input {
     display: none;
 }
 input:checked+label {
-    width: 600px;
+    width: 700px;
 }
 input:checked+label .description{
     opacity: 1 !important;
