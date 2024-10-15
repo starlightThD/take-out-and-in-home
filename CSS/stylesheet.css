@@ -100,7 +100,7 @@ body {
 .paragraph {
     color: var(--text-color);
     margin: 5px auto;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 5px;
     font-size: 20px;
     text-align: center;
@@ -217,7 +217,10 @@ a:hover {
     position: relative;
     display: block;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
 #china_map{
   width: 120%;
   height: 500px;
@@ -243,7 +246,7 @@ a:hover {
 }
 .scroll-container{
     width: 600px;
-    left:30%;
+    left: 30%;
     overflow: hidden;
     position: relative;
 }
