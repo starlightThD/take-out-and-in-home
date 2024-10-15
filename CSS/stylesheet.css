@@ -143,13 +143,13 @@ body {
     transition: color 0.3s ease-in-out;
 }
 
-.nav>input[type="radio"] {
+.nav>input[type="radio"][name="newsyear"] {
     width: 0;
     height: 0;
     opacity: 0;
 }
 
-.nav>input[type="radio"]:checked+label {
+.nav>input[type="radio"][name="newsyear"]:checked+label {
     color: #ffffff
 }
 
@@ -315,13 +315,13 @@ a:hover {
 .description h4{
     text-transform: uppercase;
 }
-input {
+input[name = "slide"] {
     display: none;
 }
-input:checked+label {
+input[name = "slide"]:checked+label {
     width: 700px;
 }
-input:checked+label .description{
+input[name = "slide"]:checked+label .description{
     opacity: 1 !important;
     transform: translateY(0px) !important;
 }
