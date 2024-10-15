@@ -337,12 +337,9 @@ top3: '无'
                 }]
             };
             china_map.setOption(option);
-
-
             const imageContainer = document.getElementById('imageContainer');
             const images = document.querySelectorAll('.images img'); 
             let currentIndex = 0;
-        
             imageContainer.addEventListener('wheel', function(event) {
                 event.preventDefault();
                 if (event.deltaY > 0) {
