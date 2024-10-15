@@ -269,7 +269,7 @@ top3: '无'
                     formatter: function(params) {
                         let title = '外卖订单量';
                         return '<div style="font-weight:bold">' + title + '</div>' +
-                            '<div style="font-size:14px">' + params.name + ':' + params.value + '</div>' +
+                            '<div style="font-size:14px">' + params.name + ' : ' + params.value + '</div>' +
                             '<div style="font-size:14px">' + 'TOP1:' + params.data.top1 + '</div>' +
                             '<div style="font-size:14px">' + 'TOP2:' + params.data.top2 + '</div>' +
                             '<div style="font-size:14px">' + 'TOP3:' + params.data.top3 + '</div>';
@@ -336,5 +336,16 @@ top3: '无'
                     data: mydata
                 }]
             };
-
             china_map.setOption(option);
+            const imageContainer = document.getElementById('imageContainer');
+            const images = document.querySelectorAll('.images img'); 
+            let currentIndex = 0;
+            imageContainer.addEventListener('wheel', function(event) {
+                event.preventDefault();
+                if (event.deltaY > 0) {
+                    currentIndex = (currentIndex + 1) % images.length;
+                } else {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                }
+                imageContainer.style.transform = `translateX(-${currentIndex * 600}px)`; 
+            });
