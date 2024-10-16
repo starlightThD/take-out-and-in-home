@@ -16,6 +16,7 @@ window.addEventListener("scroll", function(){
 function scrollToTop(){
     window.scrollTo({top: 0, behavior: "smooth"});
 }
+
 const news2024 = document.getElementById('news2024');
 const news2022 = document.getElementById('news2022');
 const news2020 = document.getElementById('news2020');
@@ -263,7 +264,13 @@ top3: '无'
             ];
 
             var option = {
-                backgroundColor: '#f7ea74',
+                grid: {
+                    top: '10%',
+                    left: '10%',
+                    right: '10%',
+                    bottom: '10%',
+                    containLabel: true
+                },
                 tooltip: {
                     trigger: 'item',
                     formatter: function(params) {
