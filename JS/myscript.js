@@ -4,6 +4,9 @@ window.onload = function(){
         document.getElementById("loader").style.opacity = "0";
         document.getElementById("main").style.opacity = "1";
         console.log("Page loaded");
+        setTimeout(function(){
+            document.getElementById("loader").style.display = "none";
+        }, 1000);
 }
 
 
