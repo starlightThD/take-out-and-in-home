@@ -673,6 +673,3 @@ input[name = "slide"]:checked+label .description{
     display: inline-block;
     white-space: nowrap;
 }
-iframe{
-    background-color: var(--color1);
-}
