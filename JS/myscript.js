@@ -1,5 +1,6 @@
 
 window.onload = function(){
+    news2024.classList.add('show');
         document.getElementById("loader").style.display = "none";
         document.getElementById("main").style.display = "block";
         console.log("Page loaded");
@@ -19,6 +20,15 @@ window.addEventListener("scroll", function(){
         maintitle.style.fontSize = "70px";
         topmenu.style.top = "-30px";
     }
+    const unitOpen = document.querySelectorAll(".unitOpen");
+    unitOpen.forEach(unitOpen => {
+        const rect = unitOpen.getBoundingClientRect();
+        if(rect.top >= 0&& rect.bottom <= window.innerHeight){
+            unitOpen.classList.add('show');
+        }else{
+            unitOpen.classList.remove('show');
+        }
+    });
 });
 function scrollToTop(){
     window.scrollTo({top: 0, behavior: "smooth"});
@@ -27,9 +37,7 @@ function scrollToTop(){
 const news2024 = document.getElementById('news2024');
 const news2022 = document.getElementById('news2022');
 const news2020 = document.getElementById('news2020');
-window.onload = function(){ 
-    news2024.classList.add('show');
-};
+
 const newsyear = document.getElementsByName('newsyear');
 newsyear.forEach(radio => {
     radio.addEventListener('change', function(){
@@ -351,6 +359,7 @@ top3: '无'
                 }]
             };
             china_map.setOption(option);
+
             const imageContainer = document.getElementById('imageContainer');
             const images = document.querySelectorAll('.images img'); 
             let currentIndex = 0;
