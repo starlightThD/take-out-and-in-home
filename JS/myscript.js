@@ -1,4 +1,11 @@
 
+window.onload = function(){
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("main").style.display = "block";
+        console.log("Page loaded");
+}
+
+
 const button = document.querySelector(".fixed-button");
 const maintitle = document.querySelector(".maintitle");
 const topmenu = document.querySelector(".header");
