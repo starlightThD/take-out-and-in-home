@@ -2,17 +2,20 @@
     --nav--item-width: 100px;
     --nav--item-height: 30px;
     --nav--item-border-width: 5px;
-    --background-color: #eae0c1;
+    --background-color: white;
     --content-color:#dacfb6;
     --color1: #ffeb3b;
     --color2: #fdd835;
     --color3:#fbc02d;
     --color4:#f9a825;
     --color5:#f57f17;
-    --color6:#cbe5cc;
+    /* --color6:#cbe5cc;
     --color7:#98cb9a;
-    --color8:#65B168;
-    --color9:#3d9241;
+    --color8:#65B168; */
+    --color7:#cbe5cc;
+    --color8:#98cb9a;
+    --color9:#65B168;
+    /* --color9:#3d9241; */
     --color10:#2b662e;
     --text-color:#212121;
     --deep-grey:#757575;
@@ -535,7 +538,7 @@ a:hover {
     justify-content: center;
 }
 .scroll-container{
-    width: 650px;
+    width: 600px;
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
@@ -680,7 +683,7 @@ input[name = "slide"]:checked+label .description{
     background-color: var(--color7);
 }
 #footer span{
-    width: 1000px;
+    width: 100%;
     display: inline-block;
     white-space: nowrap;
     justify-content: center;
