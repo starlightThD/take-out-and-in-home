@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>从外卖看宅经济</title>
+    <title>数据之眼，窥见“宅”影
+    </title>
     <meta charset="utf-8">
     <script src="./JS/myscript.js" defer></script>
     <script src="./JS/jquery-3.5.1.min.js"></script>
@@ -18,7 +19,7 @@
         <span></span>
         <span></span>
     </div>
-    <div id="main" style="display:none;">
+    <div id="main" style="opacity: 0;transition: opacity 1s ease-in-out;">
         <div class="header">
             <nav class="topnav">
                 <ul>
@@ -34,7 +35,8 @@
         <button class="fixed-button" onclick="scrollToTop()">回到顶部</button>
         <div class="title">
             <img src="./images/hamtop.png" width="400px" height="140px" alt="hamtop">
-            <h1 class="maintitle">从外卖看宅经济</h1>
+            <h2 class="maintitle">数据之眼，窥见“宅”影
+            </h2>
             <img src="./images/hambottom.png" width="400px" height="140px" alt="hambottom">
             <p class="subtitle">—— 宅居消费的“大数据”分析</p>
             <p class="paragraph" id="intro">
@@ -58,7 +60,7 @@
         </div>
         <div class="unitOpen" id="news">
             <img src="./images/news.jpg" alt="news">
-            <p>新闻一览</p><br><br>
+            <h1>新闻一览</h1><br><br>
         </div>
         <div class="blockcontent">
             <div class="newslist">
@@ -149,39 +151,41 @@
             <p class="paragraph">为了探究宅经济的发展，我们统计了各大省市的外卖销量情况。
             </p>
         </div>
-        <br><br>
         <div class="blockcontent">
             <div class="unitOpen" id="map">
                 <img src="./images/map.jpg" alt="map">
-                <p>食行千里</p><br><br>
+                <h1>食行千里</h1><br><br>
             </div>
+            <br>
             <p class="subtitle">外卖平台的配送网络遍及城市的每一个角落，从一线城市到三四线小镇，外卖员的足迹都无处不在。
             </p>
+            <br>
             <p class="twinkle">鼠标悬浮查看具体数据</p>
+            <br>
             <div id="china_map" style="width: 900px;height:600px"></div>
-            <p class="paragraph">各大城市外卖订单量的排名不只是单纯的数字，更折射出地域文化与都市生活方式的差异。
-                <br>如果只从城市排布来看，外卖消费者的分布是这样的：</p>
+            <br><p class="paragraph">各大城市外卖订单量的排名不只是单纯的数字，更折射出地域文化与都市生活方式的差异。
+                <br><br>如果只从城市排布来看，外卖消费者的分布是这样的：</p>
+                <br>
             <iframe src="https://dycharts.com/xshow/index.html?id=c_8d7558d749ef057df78e74f41bcca232" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">经过调查，<strong>外卖订单量</strong>最多城市的<strong>Top10</strong>分别是他们：</p>
-            <p class="twinkle">点击左下角播放</p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_f22e0cc1e2281da0af3a83cdc2a6fb5a" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">排行榜上的Top10城市，是“宅经济”的先锋。它们的外卖订单量遥遥领先，见证了“宅”生活的蓬勃发展。
+            <br><br><p class="paragraph">经过调查，<strong>外卖订单量</strong>最多城市的<strong>Top10</strong>分别是他们：</p>
+            <br><p class="twinkle">点击左下角播放</p>
+            <br><iframe src="https://dycharts.com/xshow/index.html?id=c_f22e0cc1e2281da0af3a83cdc2a6fb5a" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            <br><br><p class="paragraph">排行榜上的Top10城市，是“宅经济”的先锋。它们的外卖订单量遥遥领先，见证了“宅”生活的蓬勃发展。
                 <br><br><strong>有你的城市吗？</strong></p>
             <p class="paragraph">同时，我们发现大多数人更倾向于点<strong>本地特色菜品</strong>。</p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_8fd753ec50c93b2ed5ae16a0100f878c" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            <br><iframe src="https://dycharts.com/xshow/index.html?id=c_8fd753ec50c93b2ed5ae16a0100f878c" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
             <iframe src="https://dycharts.com/xshow/index.html?id=c_0b9d375f3d7e6aa1e8a3dba055b1e3eb" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">无论是本地人的坚守还是外来人的尝鲜，都是<strong>对当地风俗的热爱</strong>。</p>
+            <br><br><p class="paragraph">无论是本地人的坚守还是外来人的尝鲜，都是<strong>对当地风俗的热爱</strong>。</p>
         </div>
         <div class="blockcontent">
             <div class="unitOpen" id="chart">
                 <img src="./images/chart.jpg" alt="chart">
-                <p>宅食之道
-                </p><br><br>
+                <h1>宅食之道</h1><br><br>
             </div>
-            <p classs="paragraph">影响大家点外卖的因素有很多，为了进行分析，我们整理出了以下几条：</p>
-            <br>
+            <br><br><p classs="paragraph">影响大家点外卖的因素有很多，为了进行分析，我们整理出了以下几条：</p>
+            <br><br>
             <div class="scroll-container" id="scrollContainer">
-                <h1>用户画像</h1>
+                <h2>用户画像</h2>
                 <div class="images" id="imageContainer">
                     <span style="writing-mode: vertical-rl;text-align: center;margin-right:10px;" class="twinkle"><strong>滚动以查看更多图片</strong></span>
                     <img src="./images/frequency.gif" alt="frequency">
@@ -189,7 +193,7 @@
                     <img src="./images/genderDistribution.gif" alt="genderDistribution">
                 </div>
             </div>
-            <p class="paragraph">外卖消费频次和人群分布揭示了宅经济下中国人的<strong>生活节奏</strong>。数据显示，每周点<strong>1-2次，3-4次，5-10次</strong>的消费者，组成了外卖大军中的大多数，<strong>20-34岁</strong>的人们已经把外卖写入自己的食谱，女性的订单量占比更是达到了<strong>59.0%</strong>。
+            <br><br><p class="paragraph">外卖消费频次和人群分布揭示了宅经济下中国人的<strong>生活节奏</strong>。数据显示，每周点<strong>1-2次，3-4次，5-10次</strong>的消费者，组成了外卖大军中的大多数，<strong>20-34岁</strong>的人们已经把外卖写入自己的食谱，女性的订单量占比更是达到了<strong>59.0%</strong>。
                 <br><br>我们已经将外卖<strong>“生活化"，“常态化”</strong>。究竟是自己下厨不方便，还是出门下馆子太劳累？或许，这些都是原因的一部分。
             </p>
             <br>
@@ -197,42 +201,41 @@
             <iframe src="https://dycharts.com/xshow/index.html?id=c_6d0b4d0fc1a884e0ac6dc45a29252703" width="500" height="400" scrolling="no" frameborder="0" align=""></iframe>
             <p class="paragraph">大多数人认为自己没有时间或不想做饭，也有半数人图方便省事，于是我们统计了各个时间段的外卖品类占比，看看是不是有当我们不想做饭的时候，选择饭点外卖会更多。
             </p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_2f8fd5dc02268b89955f800f77cc912b" width="800" height="510" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">事实果真如此，消费者的<strong>“懒需求”</strong>正在被外卖服务无限放大：在早饭，午饭，晚饭的时间点前，美食类外卖的占比<strong>高于90%</strong>。看来大家是真的宅在了家中，<strong>将“宅”进行到底</strong>。同时随时随地的外卖选择也让都市人在快节奏生活中找到了喘息的空间。
-
+            <br><iframe src="https://dycharts.com/xshow/index.html?id=c_2f8fd5dc02268b89955f800f77cc912b" width="800" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            <br><br><p class="paragraph">事实果真如此，消费者的<strong>“懒需求”</strong>正在被外卖服务无限放大：在早饭，午饭，晚饭的时间点前，美食类外卖的占比<strong>高于90%</strong>。看来大家是真的宅在了家中，<strong>将“宅”进行到底</strong>。同时随时随地的外卖选择也让都市人在快节奏生活中找到了喘息的空间。
                 <br><br>此外，对所有外卖的品类分析中，我们发现当下人们的外卖包装里面不只有主食饭菜，还有各种各样的<strong>餐饮</strong>，如甜点，蔬果，饮品。
                 <br><br>“宅经济”模式下，生产和消费均呈现出<strong>“全天候”“多样化”</strong>的特点。
             </p>
-            <img src="./images/variable.png " alt="variable" class="normalimage">
+            <img src="./images/variable.png " alt="variable" class="normalimage" style="margin: 0;">
             <br>
             <p class="paragraph">尽管没有到店，”顾客就是上帝“的宗旨仍然在我们和店家心中，像令牌，又像训诫。外卖平台究竟用了怎样的巧计夺得了消费者的欢心？
             </p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_11f4e989c42b6e1cbb06e92b8c5bf9b7" width="500" height="300" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">作为明智的消费者，我们考虑的因素真不少。<strong>65.31%</strong>的人追求更多更好的餐饮，<strong>50.38%</strong>的人会更考虑配送的速度，配送费、价格、习惯、配送态度，这都是我们的考虑因素。而配送的速度和配送费都与配送距离息息相关。
+            <br><br><iframe src="https://dycharts.com/xshow/index.html?id=c_11f4e989c42b6e1cbb06e92b8c5bf9b7" width="500" height="300" scrolling="no" frameborder="0" align=""></iframe>
+            <br><br><p class="paragraph">作为明智的消费者，我们考虑的因素真不少。<strong>65.31%</strong>的人追求更多更好的餐饮，<strong>50.38%</strong>的人会更考虑配送的速度，配送费、价格、习惯、配送态度，这都是我们的考虑因素。而配送的速度和配送费都与配送距离息息相关。
             </p>
             <img src="./images/distance.png" alt="distance" class="normalimage">
             <p class="paragraph">可见，外卖已经不再是单一的服务，而是一个涵盖<strong>餐饮、物流和技术</strong>的综合体系。在线餐饮让更多的餐饮服务从不可达变成了30分钟内可上门的服务，使人们在饮食上有更多选择，2023年用户平均购买的餐饮品类数比2020年增加了<strong>1.3个。</strong>
                 <br><br>在宅经济模式下，<strong>外卖平台的服务</strong>也在不断优化，平台间竞争日益激烈。各大平台都不断优化配送服务，增加可选品种，争取到了自己的死忠粉。
 
             </p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_b2f9b6be5bf54e0b4d929184f3e828cc" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">其中<strong>美团和饿了么</strong>等平台凭借多样化的餐饮选择与迅捷的配送服务，获得了大量忠实用户。
+            <br><br><iframe src="https://dycharts.com/xshow/index.html?id=c_b2f9b6be5bf54e0b4d929184f3e828cc" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            <br><br><p class="paragraph">其中<strong>美团和饿了么</strong>等平台凭借多样化的餐饮选择与迅捷的配送服务，获得了大量忠实用户。
                 <br><br> 因此，分析这两个平台的数据，更有利于我们掌握大多数人的情况。统计了<strong>2018-2024年美团外卖各品类订单量</strong>的占比后，我们得出了下面的统计表。
             </p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_9485a4499dd9f89903faa58850338d16" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph">尽管有所下降，<strong>快餐简餐</strong>仍然是超过半数人的首选，而<strong>饮品</strong>作为新兴的非主食类饮食，近年来”异军突起“，成为了外卖行业的”后起之秀“。
+            <br><iframe src="https://dycharts.com/xshow/index.html?id=c_9485a4499dd9f89903faa58850338d16" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            <br><br><p class="paragraph">尽管有所下降，<strong>快餐简餐</strong>仍然是超过半数人的首选，而<strong>饮品</strong>作为新兴的非主食类饮食，近年来”异军突起“，成为了外卖行业的”后起之秀“。
             </p>
-            <iframe src="https://dycharts.com/xshow/index.html?id=c_48a6a1a4390b258b504ca511f8b51de5" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
+            <br><br><iframe src="https://dycharts.com/xshow/index.html?id=c_48a6a1a4390b258b504ca511f8b51de5" width="600" height="510" scrolling="no" frameborder="0" align=""></iframe>
             <p class="paragraph">此外，<strong>外卖价格</strong>也会影响我们的选择。
             </p>
             <iframe src="https://dycharts.com/xshow/index.html?id=c_f214b72e0b73c13935d1add912a0cdde" width="600" height="570" scrolling="no" frameborder="0" align=""></iframe>
-            <p class="paragraph"><strong>21-40元</strong>是我们选择的大区间，外卖并不会成为我们放纵自我的奢侈之地。
+            <br><br><br><p class="paragraph"><strong>21-40元</strong>是我们选择的大区间，外卖并不会成为我们放纵自我的奢侈之地。
             </p>
         </div>
         <div class="blockcontent">
-            <h1>卖方细化</h1>
-            <p class="paragraph">在外卖需求的飞速增长下，对外卖行业的要求也越来越高，<strong>外卖企业的规模</strong>也在不停发展。
-            </p>
+            <h2>卖方细化</h2>
+            <br><p class="paragraph">在外卖需求的飞速增长下，对外卖行业的要求也越来越高，<strong>外卖企业的规模</strong>也在不停发展。
+            </p><br><br>
             <p class="twinkle">点击缩略图查看完整数据</p>
             <div class="wrapper">
                 <div class="container">
@@ -279,24 +282,24 @@
                 </div>
             </div>
             <p class="paragraph">更大规模的外卖企业，为当前和之后外卖乃至宅经济的发展提供了强有力的支撑。因此我们有充分的理由相信，外卖经济在未来仍然有着不俗的发展势头。而从<strong>商家和消费者的评论</strong>来看，外卖在我们的心中早已是不可或缺的一环。
-            </p>
+            </p><br><br>
             <iframe src="https://dycharts.com/xshow/index.html?id=c_a31bc146a1800b8967ff606338660577" width="600" height="520" scrolling="no" frameborder="0" align=""></iframe>
             <iframe src="https://dycharts.com/xshow/index.html?id=c_a64b0b73a8f377d734164abdefbfce80" width="550" height="530" scrolling="no" frameborder="0" align=""></iframe>
             <p class="subtitle">词频分析：通过jiaba分词器对全部评价文本进行了清洗，同时排除无意义的动词连接词等，获得了以上31个好评高频词，对其进行统计</p>
-        </div>
+        </div><br><br>
         <div class="conclusion">
             <div class="unitOpen" id="conclusion">
                 <img src="./images/conclusion.jpg" alt="conclusion">
-                <p>宅智未来</p><br><br>
+                <h1>宅智未来</h1><br><br>
             </div>
-            <p class="paragraph">作为“宅经济”的重要组成，外卖已经渗透进人们的生活：从<strong>年轻人</strong>到<strong>老年人</strong>、从<strong>早午饭</strong>到<strong>下午茶、夜宵</strong>，都能看见外卖的身影，都有着宅经济的体现。同时，根据<span style="background-color:rgba(152,203,154,0.5);border-radius: 15px;padding: 2px">《2023年中国外卖平台消费者认为外卖行业需改进的方面》</span>，位居前列的有商家的服务质量、食品质量和分量、食品的健康程度，这背后折射出的是消费者对于健康的重视、对外卖食品安全等需求层次的提高，相信有更多的人参与进外卖消费之中，能够给我们的食品健康和生命安全带来更好的保障。
+            <br><br><p class="paragraph">作为“宅经济”的重要组成，外卖已经渗透进人们的生活：从<strong>年轻人</strong>到<strong>老年人</strong>、从<strong>早午饭</strong>到<strong>下午茶、夜宵</strong>，都能看见外卖的身影，都有着宅经济的体现。同时，根据<span style="background-color:rgba(152,203,154,0.5);border-radius: 15px;padding: 2px">《2023年中国外卖平台消费者认为外卖行业需改进的方面》</span>，位居前列的有商家的服务质量、食品质量和分量、食品的健康程度，这背后折射出的是消费者对于健康的重视、对外卖食品安全等需求层次的提高，相信有更多的人参与进外卖消费之中，能够给我们的食品健康和生命安全带来更好的保障。
                 <br><br>同时，<strong>政策、经济、社会和技术四驾马车</strong>也持续为餐饮外卖行业保驾护航。自2020年疫情发生以来，针对餐饮行业的复苏与稳定，各级政府出台了有力的相关政策，涉及税收减免、社保费减免、金融贷款支持等多方面，全力保障中小餐饮企业顺利渡过疫情期，实现市场的可持续健康发展；在经济、社会、技术多重利好因素的作用下，我国餐饮外卖行业发展脚步依然<strong>稳健有力</strong>。
             </p>
             <div class="timeline">
                 <div class="line"></div>
                 <div class="timebox">
                     <div class="left">
-                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size:16px;">2020年2月</span><br> 《关于支持新型冠状病毒感染的肺炎疫情防控有关税收政策的公告》提出<strong>对餐饮业免征增值税</strong>。
+                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size: 18px;">2020年2月</span><br> 《关于支持新型冠状病毒感染的肺炎疫情防控有关税收政策的公告》提出<strong>对餐饮业免征增值税</strong>。
                     </div>
                     <div class="right">
 
@@ -307,13 +310,13 @@
 
                     </div>
                     <div class="right">
-                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size:16px;">2021年3月</span><br> 《政府工作报告》指出要引导银行扩大信用贷款、持续增加首贷户，推广随借随还贷款，使资金更多流向<strong>小微企业、个体工商户、新型农业经营主体</strong>，对受疫情持续影响行业企业给予定向支持。
+                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size: 18px;">2021年3月</span><br> 《政府工作报告》指出要引导银行扩大信用贷款、持续增加首贷户，推广随借随还贷款，使资金更多流向<strong>小微企业、个体工商户、新型农业经营主体</strong>，对受疫情持续影响行业企业给予定向支持。
 
                     </div>
                 </div>
                 <div class="timebox">
                     <div class="left">
-                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size:16px;">2022年6月</span><br> 商务部等11部门办公厅发布了关于促进餐饮业恢复发展扶持政策贯彻落实工作的通知。这份通知旨在推动《关于促进服务业领域困难行业恢复发展的若干政策》的落地实施，促进餐饮业<strong>加快恢复发展</strong>。
+                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size: 18px;">2022年6月</span><br> 商务部等11部门办公厅发布了关于促进餐饮业恢复发展扶持政策贯彻落实工作的通知。这份通知旨在推动《关于促进服务业领域困难行业恢复发展的若干政策》的落地实施，促进餐饮业<strong>加快恢复发展</strong>。
 
                     </div>
 
@@ -326,13 +329,13 @@
                     </div>
 
                     <div class="right">
-                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size:16px;">2023年6月</span><br> 市场监管总局和商务部发布了《关于发挥网络餐饮平台引领带动作用、有效防范外卖食品浪费的指导意见》。该政策鼓励网络餐饮平台<strong>优化餐品供给结构</strong>，推广小份餐品，优化餐品信息展示，以及强化全流程消费提醒，以减少食品浪费。
+                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size: 18px;">2023年6月</span><br> 市场监管总局和商务部发布了《关于发挥网络餐饮平台引领带动作用、有效防范外卖食品浪费的指导意见》。该政策鼓励网络餐饮平台<strong>优化餐品供给结构</strong>，推广小份餐品，优化餐品信息展示，以及强化全流程消费提醒，以减少食品浪费。
 
                     </div>
                 </div>
                 <div class="timebox">
                     <div class="left">
-                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size:16px;">2024年3月</span><br> 商务部等9部门正式印发了《关于促进餐饮业高质量发展的指导意见》。该指导意见以习近平新时代中国特色社会主义思想为指导，从7个方面提出22项具体政策措施，包括<strong>提升餐饮服务品质、创新餐饮消费场景</strong>。
+                        <span style="background-color: #65B168;  padding:3px; border-radius:5px; color:white; font-size: 18px;">2024年3月</span><br> 商务部等9部门正式印发了《关于促进餐饮业高质量发展的指导意见》。该指导意见以习近平新时代中国特色社会主义思想为指导，从7个方面提出22项具体政策措施，包括<strong>提升餐饮服务品质、创新餐饮消费场景</strong>。
 
                     </div>
                     <div class="center">
@@ -346,7 +349,7 @@
             <br><br><br>
 
             <p class="paragraph"> “宅经济”是随着经济发展， 在信息技术进步和广泛应用的推动下而出现、发展的一种生活模式和生产方式，满足了人们需求层次不断提高的要求，也适应了企业降低成本、提高效率、增强灵活性的发展需要。随着新一轮科技革命和产业变革广泛兴起，科学技术更新迭代，我国经济高质量发展，居民消费水平不断提高，相关法律法规不断完善，我们预测“宅经济”发展趋势如下：
-                <div class="imageWithText">
+                <br><br><div class="imageWithText">
                     <div class="textBox"id="range">
                         <div class="content">
                             <h1>发展范围</h1>
@@ -376,8 +379,10 @@
                     </div>
                     </div>
                 </div>
+                </p>
+            <p class="paragraph">
                 <br><br>总的来说，“宅经济”发展空间巨大，将成为中国经济增长的重要力量。
-                <br><strong>原来，我们随手下单的外卖，正是当下充满活力的经济动脉。</strong>
+                <br><br><br><strong>原来，我们随手下单的外卖，正是当下充满活力的经济动脉。</strong>
             </p>
         </div>
         <br><br>
@@ -399,9 +404,8 @@
             <br>【12】《外卖产业调查研究报告（2019年前三季度）》
             <br>部分数据使用八爪鱼采集器，后裔采集器爬取数据。
             <br>图片和部分资料来源于网络，非商业用途，侵权必删！
-        </span>
-        <span>
-            参考资料
+            <br><br>
+            <br>参考资料
             <br>【1】李晓华.宅经济：内涵、演进与驱动因素[J].企业经济,2020,(05):5-13+2.
             <br>DOI:10.13529/j.cnki.enterprise.economy.2020.05.001.
             <br>【2】杨继东.“宅经济”的发展及其面临的挑战[J].人民论坛,2022,(02):29-33.
@@ -410,7 +414,7 @@
             <br>【4】吴晓晖.“宅文化”的本土化及其传播研究[D].内蒙古大学,2020.
             <br>DOI:10.27224/d.cnki.gnmdu.2020.000982.
             <br><br>
-            关于我们
+            <br>关于我们
             <br>指导老师：侯晓艳
             <br>团队成员：王梦雨 王梦荷 吴杏雨 黄健 王丛辰
             <br>武汉大学

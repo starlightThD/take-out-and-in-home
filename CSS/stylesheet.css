@@ -17,6 +17,8 @@
     --text-color:#212121;
     --deep-grey:#757575;
     --light-grey:#bdbdbd;
+    --fontSize-of-main-title: 30px;
+    --fontSize-of-second-title: 50px;
 }
 html{
     scroll-behavior: smooth;
@@ -45,8 +47,10 @@ body {
     overflow: hidden;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     z-index: 100;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
-#loader span
+#loader spans
 {
     position: absolute;
     display: block;
@@ -134,7 +138,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     z-index: 1000;
     opacity: 1;
     transition: right 0.5s ease-in-out;
@@ -188,7 +192,7 @@ body {
 .subtitle {
     width: 100%;
     padding: 5px;
-    font-size: 13px;
+    font-size: 18px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -267,16 +271,15 @@ body {
     transition: transform 0.7s cubic-bezier(0.19,1,0.22,1);
 }
 .textBox h1{
-    font-size: 40px;
     font-weight: bold;
 }
 .textBox h2{
-    font-size: 25px;
+    font-size: 18px;
     opacity: 0.5;
     transition: transform 0.7s cubic-bezier(0.19,1,0.22,1), opacity 0.7s ease-in-out;
 } 
 .textBox p{
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 2px;
     width:80%;
     text-align: justify;
@@ -308,8 +311,10 @@ body {
     opacity: 0;
 }
 .maintitle {
-    font-size: 70px;
+    font-size: var(--fontSize-of-main-title);
     transition: font-size 0.5s ease-in-out;
+    white-space: nowrap;
+    text-align: center;
 }
 .unitOpen{
     width: 100%;
@@ -330,13 +335,12 @@ body {
     filter: brightness(1);
     transition: filter 0.5s ease-in-out;
 }
-.unitOpen p{
+.unitOpen h1{
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 80px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     text-align: center;
@@ -347,7 +351,7 @@ body {
 .unitOpen.show img{
     filter: brightness(0.3);
 }
-.unitOpen.show p{
+.unitOpen.show h1{
     opacity: 1;
 }
 
@@ -363,11 +367,18 @@ body {
     margin: 5px auto;
     max-width: 800px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    opacity:0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.paragraph.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 .twinkle {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     animation: twinkle 2s ease-in-out infinite;
 }
@@ -387,7 +398,7 @@ body {
     margin: 5px auto;
     max-width: 800px;
     padding: 5px;
-    font-size: 40px;
+    font-size: 18px;
     text-align: center;
 }
 .newslist {
@@ -411,7 +422,7 @@ body {
 .nav-item {
     width: var(--nav--item-width);
     height: var(--nav--item-height);
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
     display: inline-flex;
     justify-content: center;
@@ -656,7 +667,7 @@ input[name = "slide"]:checked+label .description{
     border:4px solid var(--color7);
     border-radius: 50%;
     left: 50%;
-    margin-left: -9.5px;;
+    margin-left: -9.5px;
     margin-top:3%;
     position: absolute;
     background-color:var(--background-color) ;
@@ -672,4 +683,5 @@ input[name = "slide"]:checked+label .description{
     width: 1000px;
     display: inline-block;
     white-space: nowrap;
+    text-align: center;
 }

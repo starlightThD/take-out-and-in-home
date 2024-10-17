@@ -1,8 +1,8 @@
 
 window.onload = function(){
     news2024.classList.add('show');
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("main").style.display = "block";
+        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("main").style.opacity = "1";
         console.log("Page loaded");
 }
 
@@ -17,7 +17,7 @@ window.addEventListener("scroll", function(){
         topmenu.style.top = "0";
     }else{
         button.style.right = "-100px";
-        maintitle.style.fontSize = "70px";
+        maintitle.style.fontSize = "60px";
         topmenu.style.top = "-30px";
     }
     const unitOpen = document.querySelectorAll(".unitOpen");
@@ -27,6 +27,16 @@ window.addEventListener("scroll", function(){
             unitOpen.classList.add('show');
         }else{
             unitOpen.classList.remove('show');
+        }
+    });
+    const paragraphs = this.document.querySelectorAll('.paragraph');
+    paragraphs.forEach(paragraph => {
+        const rect = paragraph.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if(rect.top >= 0 && rect.bottom <= windowHeight){
+            paragraph.classList.add('visible');
+        }else{
+            paragraph.classList.remove('visible');
         }
     });
 });
