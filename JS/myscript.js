@@ -1,4 +1,15 @@
 
+window.onload = function(){
+    news2024.classList.add('show');
+        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("main").style.opacity = "1";
+        console.log("Page loaded");
+        setTimeout(function(){
+            document.getElementById("loader").style.display = "none";
+        }, 1000);
+}
+
+
 const button = document.querySelector(".fixed-button");
 const maintitle = document.querySelector(".maintitle");
 const topmenu = document.querySelector(".header");
@@ -9,19 +20,37 @@ window.addEventListener("scroll", function(){
         topmenu.style.top = "0";
     }else{
         button.style.right = "-100px";
-        maintitle.style.fontSize = "70px";
+        maintitle.style.fontSize = "60px";
         topmenu.style.top = "-30px";
     }
+    const unitOpen = document.querySelectorAll(".unitOpen");
+    unitOpen.forEach(unitOpen => {
+        const rect = unitOpen.getBoundingClientRect();
+        if(rect.top >= 0&& rect.bottom <= window.innerHeight){
+            unitOpen.classList.add('show');
+        }else{
+            unitOpen.classList.remove('show');
+        }
+    });
+    const paragraphs = this.document.querySelectorAll('.paragraph');
+    paragraphs.forEach(paragraph => {
+        const rect = paragraph.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if(rect.top >= 0 && rect.bottom <= windowHeight){
+            paragraph.classList.add('visible');
+        }else{
+            paragraph.classList.remove('visible');
+        }
+    });
 });
 function scrollToTop(){
     window.scrollTo({top: 0, behavior: "smooth"});
 }
+
 const news2024 = document.getElementById('news2024');
 const news2022 = document.getElementById('news2022');
 const news2020 = document.getElementById('news2020');
-window.onload = function(){ 
-    news2024.classList.add('show');
-};
+
 const newsyear = document.getElementsByName('newsyear');
 newsyear.forEach(radio => {
     radio.addEventListener('change', function(){
@@ -263,7 +292,13 @@ top3: '无'
             ];
 
             var option = {
-                backgroundColor: '#f7ea74',
+                grid: {
+                    top: '10%',
+                    left: '10%',
+                    right: '10%',
+                    bottom: '10%',
+                    containLabel: true
+                },
                 tooltip: {
                     trigger: 'item',
                     formatter: function(params) {
@@ -337,6 +372,7 @@ top3: '无'
                 }]
             };
             china_map.setOption(option);
+
             const imageContainer = document.getElementById('imageContainer');
             const images = document.querySelectorAll('.images img'); 
             let currentIndex = 0;
